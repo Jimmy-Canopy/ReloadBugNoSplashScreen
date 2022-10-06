@@ -1,0 +1,35 @@
+{
+  "cli": {
+    "version": ">=1.2.0",
+    "appVersionSource": "remote"
+  },
+
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "android": {
+        "gradleCommand": ":app:assembleDebug"
+      },
+      "ios": {
+        "buildConfiguration": "Debug"
+      }
+    },
+
+    "preview": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+
+    "production": {
+      "autoIncrement": true
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "ascAppId":"1637481672"
+      }
+    }
+  }
+}
